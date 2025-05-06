@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <div class="content">
+        <div class="container">
+            <div class="timer">
+                <div class="time-display">
+                    <span id="hours">03</span>:<span id="minutes">00</span>:<span id="seconds">00</span>
+                </div>
+                <div class="sliders">
+                    <div class="slider-group">
+                        <input type="range" id="hoursSlider" min="0" max="23" value="3" class="slider">
+                        <span class="slider-value" id="hoursSliderValue">3h</span>
+                    </div>
+                    <div class="slider-group">
+                        <input type="range" id="minutesSlider" min="0" max="59" value="0" class="slider">
+                        <span class="slider-value" id="minutesSliderValue">0m</span>
+                    </div>
+                    <div class="slider-group">
+                        <input type="range" id="secondsSlider" min="0" max="59" value="0" class="slider">
+                        <span class="slider-value" id="secondsSliderValue">0s</span>
+                    </div>
+                </div>
+                <div class="controls">
+                    <button id="startBtn" class="btn">Start</button>
+                    <button id="pauseBtn" class="btn" disabled>Pause</button>
+                    <button id="resetBtn" class="btn">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="crash-popup">
+        <span>TIMER COMPLETE</span>
+    </div>
+    <script src="matrix.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
