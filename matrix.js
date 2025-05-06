@@ -4,7 +4,7 @@ const ctx = canvas.getContext('2d');
 // Set canvas size to window size
 function resizeCanvas() {
     canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    canvas.height = Math.max(window.innerHeight, document.documentElement.scrollHeight);
 }
 
 // Initial resize

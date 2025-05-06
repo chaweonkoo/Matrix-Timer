@@ -1,6 +1,6 @@
 # Matrix Three-Hour Timer
 
-A cyberpunk-themed countdown timer inspired by The Matrix, featuring a digital rain effect and dramatic completion animation.
+A cyberpunk-themed countdown timer inspired by The Matrix, featuring a digital rain effect and dramatic completion animation. https://chaweonkoo.github.io/Matrix-Timer/
 
 ## Features
 
